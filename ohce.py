@@ -1,5 +1,5 @@
 
-from datetime import time
+from datetime import datetime
 
 def greet(name, t):
     hour = t.hour
@@ -18,4 +18,21 @@ def reverseWord(s):
 
 def stop(s):
     return f'Adios {s}'
+
+if __name__ == "__main__":
+    name = input("$ ")
+
+    print('> ' + greet(name,datetime.now().time()))
+
+    while True:
+        user_input = input("$ ")
+        if user_input == "Stop!":
+            print(stop(name))
+            break
+        else:
+            reversedWord = reverseWord(user_input)
+            print('> ' + reversedWord)
+            isNice = isPalindrome(user_input,reversedWord)
+            if isNice is not None:
+                print('> ' + isNice)
 
