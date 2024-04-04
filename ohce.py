@@ -17,5 +17,5 @@ def reverseWord(s):
     return s[::-1]
 
 def stop(s):
-    return
+    return f'Adios {s}'
 
