@@ -3,13 +3,8 @@ def greet():
 
     return
 
-def reverseWord():
-    
-    return
-
-def isPalindrome():
-
-    return
+def reverseWord(s):
+    return s[::-1]
 
 def stop():
     
