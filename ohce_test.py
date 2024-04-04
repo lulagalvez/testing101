@@ -31,7 +31,7 @@ def test_greet_afternoon():
     name = "Lula"
     assert ohce.greet(name, time(13,10)) == f"¡Buenas tardes {name}!"
     assert ohce.greet(name, time(15,30)) == f"¡Buenas tardes {name}!"
-    assert ohce.greet(name, time(12,1)) == f"¡Buenas tardes {name}!"
+    assert ohce.greet(name, time(12,0)) == f"¡Buenas tardes {name}!"
     assert ohce.greet(name, time(19,59)) == f"¡Buenas tardes {name}!"
 
 def test_greet_night():

@@ -11,7 +11,7 @@ def greet(name, t):
         return f'¡Buenas tardes {name}!'
 
 def isPalindrome(s1,s2):
-    return
+    return "¡Bonita palabra!" if s1==s2 else None
 
 def reverseWord(s):
     return s[::-1]
